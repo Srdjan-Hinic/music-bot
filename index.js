@@ -1,4 +1,4 @@
-const { prefix, token } = require("./config.json");
+const { prefix, token } = require("./config.json"); // token, prefix
 const Discord = require("discord.js");
 const ytdl = require("ytdl-core");
 const yts = require("yt-search");
@@ -94,9 +94,6 @@ client.on("message", async message => {
             console.log(e);
             return message.channel.send("Nothing is currently being played.");
         }
-    } else if (message.content.startsWith(`${prefix}duvajga`)) { // kek
-
-        return message.channel.send("Duvaj ga ti, ti se jedan jedan covek seljak i i imas muza u kuci i to je tvoj problem");
 
     } else if (message.content.startsWith(`${prefix}loop`)) {
         serverQueue.isLooping = !serverQueue.isLooping;
